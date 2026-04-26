@@ -1,0 +1,341 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastFullReview": "2026-04-26",
+    "nextScheduledReview": "2026-07-01",
+    "source": "IHDA HRAP Round 2 Grantee Contact Information (updated 2025-10-27)",
+    "notes": "ZIP → county mapping covers Chicago metro and collar counties. Chicago city limits ZIPs are listed explicitly — all others in Cook County are suburban Cook. County → grantee mapping reflects HRAP Round 2; update when IHDA announces new rounds."
+  },
+
+  "chicagoCityZips": [
+    "60601","60602","60603","60604","60605","60606","60607","60608","60609","60610",
+    "60611","60612","60613","60614","60615","60616","60617","60618","60619","60620",
+    "60621","60622","60623","60624","60625","60626","60628","60629","60630","60631",
+    "60632","60633","60634","60636","60637","60638","60639","60640","60641","60642",
+    "60643","60644","60645","60646","60647","60649","60651","60652","60653","60654",
+    "60655","60656","60657","60659","60660","60661","60706","60707"
+  ],
+
+  "countyByZip": {
+    "_note": "Covers Chicago metro and collar counties. ZIP codes not listed here are outside the primary service area — display a message directing the user to search ihda.org for their county.",
+
+    "Cook": [
+      "60004","60005","60006","60007","60008","60010","60016","60017","60018","60019",
+      "60022","60025","60026","60029","60043","60053","60056","60062","60067","60068",
+      "60070","60074","60076","60077","60082","60089","60090","60091","60093","60094",
+      "60095","60096","60097","60099","60103","60104","60106","60107","60130","60131",
+      "60133","60141","60153","60154","60155","60160","60161","60162","60163","60164",
+      "60165","60169","60171","60172","60173","60176","60192","60193","60194","60195",
+      "60196","60201","60202","60203","60204","60208","60209","60301","60302","60303",
+      "60304","60305","60402","60406","60409","60411","60412","60415","60419","60422",
+      "60423","60425","60426","60428","60429","60430","60438","60439","60443","60445",
+      "60452","60453","60454","60455","60456","60457","60458","60459","60461","60462",
+      "60463","60464","60465","60466","60467","60468","60469","60471","60472","60473",
+      "60475","60476","60477","60478","60480","60482","60487","60499","60501","60513",
+      "60514","60521","60523","60525","60526","60527","60534","60546","60558","60559",
+      "60561","60564","60601","60602","60603","60604","60605","60606","60607","60608",
+      "60609","60610","60611","60612","60613","60614","60615","60616","60617","60618",
+      "60619","60620","60621","60622","60623","60624","60625","60626","60628","60629",
+      "60630","60631","60632","60633","60634","60636","60637","60638","60639","60640",
+      "60641","60642","60643","60644","60645","60646","60647","60649","60651","60652",
+      "60653","60654","60655","60656","60657","60659","60660","60661","60706","60707"
+    ],
+    "DuPage": [
+      "60101","60103","60108","60115","60126","60137","60139","60143","60148","60157",
+      "60181","60185","60186","60187","60188","60189","60190","60191","60197","60399",
+      "60502","60503","60504","60505","60506","60510","60515","60516","60517","60519",
+      "60522","60532","60540","60542","60543","60544","60555","60557","60560","60563",
+      "60565","60566","60567","60585","60598"
+    ],
+    "Kane": [
+      "60102","60109","60110","60118","60119","60120","60121","60122","60123","60124",
+      "60134","60136","60140","60142","60144","60145","60147","60150","60151","60152",
+      "60174","60175","60177","60178","60183","60184","60538","60539","60541","60545",
+      "60547","60550","60554","60556"
+    ],
+    "Kendall": [
+      "60447","60448","60449","60450","60451","60490","60506","60538","60541","60543",
+      "60544","60545","60560","60586"
+    ],
+    "Will": [
+      "60401","60403","60404","60405","60407","60408","60410","60416","60417","60420",
+      "60421","60423","60424","60431","60432","60433","60434","60435","60436","60437",
+      "60440","60441","60442","60444","60446","60470","60479","60481","60484","60487",
+      "60491","60544","60586"
+    ],
+    "Lake": [
+      "60002","60010","60012","60013","60014","60015","60020","60021","60030","60031",
+      "60035","60037","60040","60041","60042","60044","60045","60046","60047","60048",
+      "60060","60061","60064","60069","60071","60072","60073","60075","60079","60083",
+      "60085","60086","60087","60088","60099","60411"
+    ],
+    "McHenry": [
+      "60012","60013","60014","60021","60033","60034","60050","60051","60071","60072",
+      "60081","60097","60098","60102","60156","60180"
+    ],
+    "Grundy": [
+      "60416","60444","60450","60479","60481"
+    ]
+  },
+
+  "grantees": {
+    "_note": "Keyed by grantee ID. Each record includes name, service area description, contact, project types, and waitlist status. Updated from IHDA HRAP Round 2 grantee list (2025-10-27).",
+
+    "far-south-cdc": {
+      "name": "Far South Community Development Corporation",
+      "serviceArea": "City of Chicago; Calumet City; Calumet Park; Blue Island; Markham; Harvey; Riverdale; Robbins; Midlothian; Dixmoor; Posen; South Holland; Dolton",
+      "serviceAreaType": "chicago-and-south-suburbs",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Beatriz Salazar",
+        "title": "HUD Certified Housing Counselor",
+        "phone": "(773) 831-7107",
+        "email": "Beatriz@farsouthcdc.org",
+        "url": "https://farsouthcdc.org/"
+      }
+    },
+
+    "rebuilding-together-metro-chicago": {
+      "name": "Rebuilding Together Metro Chicago",
+      "serviceArea": "City of Chicago",
+      "serviceAreaType": "chicago",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "closed",
+      "contact": {
+        "name": "Cristina Passmore",
+        "title": "Program Manager",
+        "phone": "(312) 201-1188",
+        "email": "hrap@rebuildingtogether-chi.com",
+        "url": "https://www.rebuildingtogether-chi.com/hrap"
+      }
+    },
+
+    "rogers-park-northside-cdc": {
+      "name": "Rogers Park Community Development Corporation (Northside Community Development Center)",
+      "serviceArea": "City of Chicago (North Side focus)",
+      "serviceAreaType": "chicago",
+      "projectTypes": ["Accessibility"],
+      "waitlistStatus": "closed",
+      "contact": {
+        "name": "Christina Manzano",
+        "title": "Director",
+        "phone": "(773) 262-2290",
+        "email": "christina@northsidecr.org",
+        "url": "https://www.northsidecdc.org"
+      }
+    },
+
+    "northwest-housing-partnership": {
+      "name": "North West Housing Partnership",
+      "serviceArea": "Cook County, DuPage County, Kane County, McHenry County",
+      "serviceAreaType": "suburban",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Michelle Hill",
+        "title": "Program Director",
+        "phone": "(847) 969-0561",
+        "email": "michellehill@nwhp.net",
+        "url": "https://nwhp.net/"
+      }
+    },
+
+    "ucp-seguin": {
+      "name": "United Cerebral Palsy Seguin of Greater Chicago",
+      "serviceArea": "Cook County",
+      "serviceAreaType": "suburban",
+      "projectTypes": ["Accessibility"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Matina Travis",
+        "title": "Program Coordinator",
+        "phone": "(708) 444-8460",
+        "email": "mtravis@ucpnet.org",
+        "url": "https://www.ucpseguin.org"
+      }
+    },
+
+    "dupage-chicago-south-suburbs-habitat": {
+      "name": "DuPage and Chicago South Suburbs Habitat for Humanity",
+      "serviceArea": "Blue Island, Lansing, Chicago Heights, Calumet City, Country Club Hills, Dixmoor, Dolton, East Hazel Crest, Harvey, Sauk Village, Park Forest, Phoenix, South Holland, Matteson, Markham",
+      "serviceAreaType": "south-suburbs",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Judith Blitzki",
+        "title": "Family Services Manager",
+        "phone": "(630) 757-7518",
+        "email": "jbilitzki@gohabitat.org",
+        "url": "https://app.smartsheet.com/b/form/7062ea368d194c7dba69bdcf80772af3"
+      }
+    },
+
+    "community-contacts-inc": {
+      "name": "Community Contacts Inc.",
+      "serviceArea": "Kane County",
+      "serviceAreaType": "kane",
+      "projectTypes": ["Accessibility", "Full Rehab"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Lisa Austin",
+        "title": "Senior Housing Specialist",
+        "phone": "(847) 697-5914",
+        "email": "Laustin@cci-hci.org",
+        "url": "https://www.cci-hci.org"
+      }
+    },
+
+    "the-neighbor-project": {
+      "name": "The Neighbor Project",
+      "serviceArea": "Kane County, Kendall County, DuPage County",
+      "serviceAreaType": "kane-kendall-dupage",
+      "projectTypes": ["Accessibility", "Full Rehab"],
+      "waitlistStatus": "closed",
+      "contact": {
+        "name": "Brett D. Campbell",
+        "title": "HRAP Program Administrator",
+        "phone": "(331) 212-8468",
+        "email": "brett@neighborproject.us",
+        "url": "https://www.neighborproject.us"
+      }
+    },
+
+    "community-partners-affordable-housing": {
+      "name": "Community Partners for Affordable Housing",
+      "serviceArea": "Antioch, Park City, Evanston, Waukegan, Beach Park, Third Lake, Grayslake, Gages Lake, Gurnee, Hainesville, Highwood, Libertyville, Wauconda, Tower Lakes, Lake Villa, Lakemoor, Long Lake, Lindenhurst, North Chicago, Round Lake, Round Lake Beach, Round Lake Heights, Round Lake Park, Mundelein, Old Mill Creek, Grandwood, Volo, Wadsworth, Winthrop Harbor, Zion",
+      "serviceAreaType": "lake",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Nancy Duran",
+        "title": "Intake Coordinator",
+        "phone": "(847) 263-7478",
+        "email": "nduran@cpahousing.org",
+        "url": "https://www.cpahousing.org"
+      }
+    },
+
+    "lake-mchenry-habitat": {
+      "name": "Lake-McHenry Habitat for Humanity",
+      "serviceArea": "McHenry County, Lake County",
+      "serviceAreaType": "lake-mchenry",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": null,
+        "title": null,
+        "phone": "(815) 759-9002",
+        "email": "info@habitatlmc.org",
+        "url": "https://habitatlmc.org/"
+      }
+    },
+
+    "will-county-ccc": {
+      "name": "Will County Center for Community Concerns",
+      "serviceArea": "Will County",
+      "serviceAreaType": "will",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Sarah Russi",
+        "title": "Program Admin",
+        "phone": "(815) 722-0722",
+        "email": "srussi@wcccc.net",
+        "url": "https://wcccc.net/home-owner-resources/home-rehabilitation/"
+      }
+    },
+
+    "will-county-habitat": {
+      "name": "Will County Habitat for Humanity",
+      "serviceArea": "Will County, Grundy County, Kendall County",
+      "serviceAreaType": "will-grundy-kendall",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "open",
+      "contact": {
+        "name": "Mic Brophy",
+        "title": "Repair Manager",
+        "phone": "(815) 846-1008",
+        "email": "homerepair@habitatwill.org",
+        "url": "https://www.habitatwill.org"
+      }
+    },
+
+    "county-of-will": {
+      "name": "County of Will",
+      "serviceArea": "Will County, Joliet, Bolingbrook",
+      "serviceAreaType": "will",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "closed",
+      "contact": {
+        "name": "Erin Bertocchi",
+        "title": "Program Manager",
+        "phone": "(815) 774-3322",
+        "email": "ebertocchi@willcountylanduse.com",
+        "url": null
+      }
+    },
+
+    "village-of-park-forest": {
+      "name": "Village of Park Forest",
+      "serviceArea": "Park Forest",
+      "serviceAreaType": "south-suburbs",
+      "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
+      "waitlistStatus": "closed",
+      "contact": {
+        "name": "Cristina Passmore",
+        "title": "Program Manager",
+        "phone": "(312) 201-1188",
+        "email": "HRAPRD2@vopf.com",
+        "url": "https://www.villageofparkforest.com/1062/Home-Repair-Accessibility-Program"
+      }
+    }
+  },
+
+  "countyToGrantees": {
+    "_note": "Maps county → list of grantee IDs serving that county. Chicago city ZIPs use chicago-city rules (see above) and map to chicago-specific grantees first.",
+
+    "Cook-Chicago": [
+      "far-south-cdc",
+      "rebuilding-together-metro-chicago",
+      "rogers-park-northside-cdc",
+      "northwest-housing-partnership",
+      "ucp-seguin"
+    ],
+    "Cook-Suburban": [
+      "northwest-housing-partnership",
+      "ucp-seguin",
+      "dupage-chicago-south-suburbs-habitat",
+      "far-south-cdc"
+    ],
+    "DuPage": [
+      "northwest-housing-partnership",
+      "dupage-chicago-south-suburbs-habitat",
+      "the-neighbor-project"
+    ],
+    "Kane": [
+      "community-contacts-inc",
+      "the-neighbor-project"
+    ],
+    "Kendall": [
+      "the-neighbor-project",
+      "will-county-habitat"
+    ],
+    "Will": [
+      "will-county-ccc",
+      "will-county-habitat",
+      "county-of-will"
+    ],
+    "Lake": [
+      "community-partners-affordable-housing",
+      "lake-mchenry-habitat"
+    ],
+    "McHenry": [
+      "lake-mchenry-habitat",
+      "northwest-housing-partnership"
+    ],
+    "Grundy": [
+      "will-county-habitat"
+    ]
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "lastFullReview": "2026-04-26",
+    "nextScheduledReview": "2026-07-01",
+    "reviewOwner": "Building Access",
+    "notes": "All programs verified April 2026. Quarterly review required. Update lastVerified on each program when checked, even if no other fields change."
+  },
+  "programs": [
+    {
+      "id": "workers-compensation",
+      "name": "Illinois Workers' Compensation — Home Modification",
+      "shortName": "Workers' Comp",
+      "adminAgency": "Illinois Workers' Compensation Commission / employer's carrier",
+      "type": "legal-entitlement",
+      "benefitLabel": "No cap — employer legally required to pay for reasonable modifications",
+      "benefitMax": null,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Legally mandated under the Illinois Workers' Compensation Act. File with your employer's carrier. If disputed, contact the IL Workers' Compensation Commission.",
+      "contact": {
+        "phone": "(312) 814-6611",
+        "email": null,
+        "url": "https://www2.illinois.gov/sites/iwcc/Pages/home.aspx"
+      },
+      "eligibilityRules": [
+        { "rule": "injuryCause", "value": "workplace", "required": true }
+      ],
+      "matchReason": "You indicated the injury occurred at work. Under Illinois law, employers are legally required to pay for reasonable and necessary home modifications resulting from a workplace injury — including ramps, widened doorways, roll-in showers, and in severe cases, a fully accessible home. This is not discretionary. Contact your employer's workers' compensation carrier first. If they deny coverage, contact an IL workers' comp attorney.",
+      "priority": 1,
+      "notes": "Workers' comp carriers often work through home modification coordinators (e.g., HOMELINK, Apricus, Genex). Building Access can serve as the vetted local contractor network for these coordinators. Flag this as a referral pathway opportunity."
+    },
+    {
+      "id": "ag-crime-victim",
+      "name": "Illinois Attorney General — Crime Victim Compensation",
+      "shortName": "Crime Victim Compensation",
+      "adminAgency": "Illinois Attorney General's Office",
+      "type": "reimbursement",
+      "benefitLabel": "Up to $45,000 (payer of last resort — all other sources must be exhausted first)",
+      "benefitMax": 45000,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Open. Must exhaust all other funding sources first. Apply within 3 years of injury (extended if victim has a disability).",
+      "contact": {
+        "phone": "800-228-3368",
+        "email": null,
+        "url": "https://www.illinoisattorneygeneral.gov/safer-communities/supporting-victims-of-crime/crime-victim-compensation/"
+      },
+      "eligibilityRules": [
+        { "rule": "injuryCause", "value": "crime", "required": true }
+      ],
+      "matchReason": "You indicated the injury was caused by a violent crime. The Illinois Crime Victim Compensation Program can reimburse up to $45,000 in expenses — which may include home accessibility modifications. Important: this program is the payer of last resort. You must apply to and be denied (or exhaust) all other funding sources first. Apply within 3 years of the crime.",
+      "priority": 1,
+      "notes": "The $45,000 cap applies to crimes after August 7, 2022 (previously $27,000). Home modification is not explicitly listed as an eligible expense in all program materials — recommend verifying with the AG's office at intake."
+    },
+    {
+      "id": "va-sah",
+      "name": "VA Specially Adapted Housing (SAH) Grant",
+      "shortName": "VA SAH Grant",
+      "adminAgency": "U.S. Department of Veterans Affairs",
+      "type": "federal-grant",
+      "benefitLabel": "Up to $126,526 (FY2026) — usable up to 6 times over lifetime",
+      "benefitMax": 126526,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Open. VA updates benefit amounts each October (federal fiscal year). Verify current amount at va.gov each fall.",
+      "contact": {
+        "phone": "800-827-1000",
+        "email": null,
+        "url": "https://www.va.gov/housing-assistance/disability-housing-grants/"
+      },
+      "eligibilityRules": [
+        { "rule": "veteran", "value": true, "required": true },
+        { "rule": "serviceConnected", "value": true, "required": true }
+      ],
+      "matchReason": "You are a veteran with a service-connected disability. The VA Specially Adapted Housing grant is the single largest home modification benefit in this inventory — up to $126,526 for FY2026. It covers extensive modifications or an entirely new accessible home. You can use the grant up to 6 times over your lifetime. Apply through your VA regional loan center.",
+      "priority": 2,
+      "notes": "SAH is for the most severely disabled veterans (e.g., loss of or loss of use of both legs, blindness in both eyes with visual acuity of 20/200 or less, or certain severe burns). For less severe but still significant service-connected disabilities, see VA SHA grant."
+    },
+    {
+      "id": "va-sha",
+      "name": "VA Special Housing Adaptation (SHA) Grant",
+      "shortName": "VA SHA Grant",
+      "adminAgency": "U.S. Department of Veterans Affairs",
+      "type": "federal-grant",
+      "benefitLabel": "Up to $25,350 (FY2026) — usable up to 6 times over lifetime",
+      "benefitMax": 25350,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Open. VA updates benefit amounts each October (federal fiscal year).",
+      "contact": {
+        "phone": "800-827-1000",
+        "email": null,
+        "url": "https://www.va.gov/housing-assistance/disability-housing-grants/"
+      },
+      "eligibilityRules": [
+        { "rule": "veteran", "value": true, "required": true },
+        { "rule": "serviceConnected", "value": true, "required": true }
+      ],
+      "matchReason": "You are a veteran with a service-connected disability. The VA Special Housing Adaptation grant provides up to $25,350 (FY2026) for home modifications. It covers conditions such as blindness in both eyes, loss of or loss of use of both hands, or certain severe respiratory conditions. Usable up to 6 times over your lifetime.",
+      "priority": 2,
+      "notes": "SHA applies to different qualifying conditions than SAH. A veteran may qualify for one but not the other — the VA determines which applies based on the specific service-connected condition."
+    },
+    {
+      "id": "va-hisa",
+      "name": "VA Home Improvements and Structural Alterations (HISA) Grant",
+      "shortName": "VA HISA Grant",
+      "adminAgency": "U.S. Department of Veterans Affairs",
+      "type": "federal-grant",
+      "benefitLabel": "$6,800 lifetime (service-connected) or $2,000 lifetime (non-service-connected)",
+      "benefitMax": 6800,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Open. Available to veterans with both service-connected and non-service-connected disabilities — the most accessible VA housing grant.",
+      "contact": {
+        "phone": "800-827-1000",
+        "email": null,
+        "url": "https://www.va.gov/housing-assistance/disability-housing-grants/"
+      },
+      "eligibilityRules": [
+        { "rule": "veteran", "value": true, "required": true }
+      ],
+      "matchReason": "You are a veteran. The HISA grant is the most accessible VA home modification benefit — it is available even for non-service-connected disabilities ($2,000 lifetime) and provides up to $6,800 for service-connected conditions. Apply through your VA healthcare facility.",
+      "priority": 2,
+      "notes": "HISA is administered through VA healthcare, not VA regional loan centers. The lower dollar amount makes it suitable for smaller modifications (grab bars, ramp, roll-in shower) while the veteran pursues SAH/SHA for larger projects."
+    },
+    {
+      "id": "mopd-homemod",
+      "name": "Chicago MOPD HomeMod Program",
+      "shortName": "MOPD HomeMod",
+      "adminAgency": "Mayor's Office for People with Disabilities — City of Chicago",
+      "type": "grant",
+      "benefitLabel": "Up to $10,000 in modifications at no cost to the applicant",
+      "benefitMax": 10000,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "waitlist",
+      "availabilityNote": "Waitlist in effect as of April 2026. Call to discuss situation and get on the list. Program covers permits, equipment, contractor selection, and inspections at no charge.",
+      "contact": {
+        "phone": "(312) 743-5767",
+        "email": "MOPDHomeMod@cityofchicago.org",
+        "url": "https://www.chicago.gov/city/en/depts/mopd/provdrs/hous/svcs/accessible_home_modificationprogram-ages0-5911.html"
+      },
+      "eligibilityRules": [
+        { "rule": "cityChicago", "value": true, "required": true },
+        { "rule": "hasDisability", "value": true, "required": true },
+        { "rule": "ageMin", "value": 18, "required": true },
+        { "rule": "ageMax", "value": 59, "required": true }
+      ],
+      "matchReason": "You live in Chicago and have a documented disability (ages 18–59). The MOPD HomeMod program covers ramps, roll-in showers, grab bars, lifts, adjusted sink heights, and other modifications — all at no cost. MOPD handles permits, contractor selection, and inspections.",
+      "priority": 3,
+      "notes": "Program is limited to one modification per applicant per household per year. Chicago residents age 60+ were previously served by SARFS, which was absorbed into the City's Home Repair Program in 2025. Age 60+ Chicago residents should contact the Dept. of Housing at (312) 744-3200 or 311."
+    },
+    {
+      "id": "ihda-hrap",
+      "name": "IHDA Home Repair and Accessibility Program (HRAP Round 2)",
+      "shortName": "IHDA HRAP",
+      "adminAgency": "Illinois Housing Development Authority — administered by local grantees",
+      "type": "forgivable-loan",
+      "benefitLabel": "Up to $25,000 — forgivable loan (forgiven at 1/60th per month over 5 years)",
+      "benefitMax": 25000,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "varies",
+      "availabilityNote": "Availability varies by grantee and location. Some grantees have closed waitlists; others are open. Contact the grantee for your area directly. Do not apply to IHDA — apply to the local grantee.",
+      "contact": {
+        "phone": "(312) 836-5200",
+        "email": null,
+        "url": "https://www.ihda.org/community-partners/affordable-housing-programs/home-accessibility-program/"
+      },
+      "eligibilityRules": [
+        { "rule": "ilResident", "value": true, "required": true },
+        { "rule": "hasDisabilityOrAge60Plus", "value": true, "required": true },
+        { "rule": "incomeMax_pct_AMI", "value": 80, "required": true },
+        { "rule": "ownerOrRenter", "value": "either", "required": false }
+      ],
+      "matchReason": "You appear to meet the basic IHDA HRAP eligibility criteria: Illinois resident, disability or age 60+, and income within the program limit. The program provides up to $25,000 as a forgivable loan (no repayment if you stay in the home for 5 years). You must apply through the local grantee for your area — see the grantee list below.",
+      "priority": 3,
+      "notes": "Renter eligibility requires landlord written consent and the home must be held in fee simple title by the landlord. Trusts, life estates, and land contracts are not eligible. The forgivable loan is forgiven at 1/60th per month; moving before 5 years triggers partial recapture. HRAP Round 2 grantee list current as of October 2025 — check ihda.org for Round 3."
+    },
+    {
+      "id": "incil-home-modification",
+      "name": "INCIL Home Modification Program",
+      "shortName": "INCIL HomeMod",
+      "adminAgency": "Illinois Network of Centers for Independent Living",
+      "type": "grant",
+      "benefitLabel": "Free modifications — no stated cap (grant-funded pool)",
+      "benefitMax": null,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "waitlist",
+      "availabilityNote": "Waitlist of 800+ as of early 2026. Apply now — the waitlist is real but the program is expanding. Administered through your local Center for Independent Living (CIL).",
+      "contact": {
+        "phone": null,
+        "email": null,
+        "url": "https://incil.org/homemod/"
+      },
+      "eligibilityRules": [
+        { "rule": "ilResident", "value": true, "required": true },
+        { "rule": "hasDisability", "value": true, "required": true },
+        { "rule": "ownerOrRenter", "value": "either", "required": false }
+      ],
+      "matchReason": "You are an Illinois resident with a documented disability. The INCIL Home Modification Program provides free accessibility modifications to homeowners and renters (with landlord approval). It is administered through your local Center for Independent Living. Apply at incil.org/homemod — the waitlist is long but apply immediately.",
+      "priority": 3,
+      "notes": "INCIL helped 83 individuals in its first year with 800+ on the waiting list. The program is funded by the Illinois DRS $4.5M grant. Renter participation requires landlord written consent. There is no stated per-household cap — modifications are scoped to need."
+    },
+    {
+      "id": "illinois-drs",
+      "name": "Illinois DRS Home Modification Program",
+      "shortName": "IL DRS HomeMod",
+      "adminAgency": "Illinois Dept. of Human Services — Division of Rehabilitation Services",
+      "type": "grant",
+      "benefitLabel": "Funded through INCIL ($4.5M state pool — apply via local CIL)",
+      "benefitMax": null,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "DRS funds flow through INCIL and local CILs. If you are not currently enrolled in the DHS Home Services Program, contact DRS to discuss eligibility. Also apply directly to INCIL (see above).",
+      "contact": {
+        "phone": "877-581-3690",
+        "email": null,
+        "url": "https://www.dhs.state.il.us/page.aspx?item=29764"
+      },
+      "eligibilityRules": [
+        { "rule": "ilResident", "value": true, "required": true },
+        { "rule": "hasDisability", "value": true, "required": true },
+        { "rule": "notInDHSHomeServices", "value": true, "required": false, "optional": true }
+      ],
+      "matchReason": "The Illinois Division of Rehabilitation Services funds home modification grants for people with disabilities not currently served by the DHS Home Services Program. Funds are disbursed through INCIL and local Centers for Independent Living. Call DRS at 877-581-3690 to discuss your situation, and apply to INCIL simultaneously.",
+      "priority": 4,
+      "notes": "DRS and INCIL are closely linked — applying to one often surfaces the other. The $4.5M initial grant will eventually be expended; watch for follow-on state appropriations."
+    },
+    {
+      "id": "iatp-loan",
+      "name": "Illinois Assistive Technology Program (IATP) — Home Modification Loan",
+      "shortName": "IATP Loan",
+      "adminAgency": "Illinois Assistive Technology Program",
+      "type": "low-interest-loan",
+      "benefitLabel": "Loan up to $5,000 at low interest — must be repaid",
+      "benefitMax": 5000,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Open. This is a loan, not a grant — repayment required. Useful as a bridge while awaiting grant program decisions, or for modifications under $5,000 that can be completed quickly.",
+      "contact": {
+        "phone": "800-852-5110",
+        "email": null,
+        "url": "https://iatpatloans.org"
+      },
+      "eligibilityRules": [
+        { "rule": "ilResident", "value": true, "required": true },
+        { "rule": "ageMin", "value": 18, "required": true },
+        { "rule": "hasDisabilityOrFamilyMember", "value": true, "required": true }
+      ],
+      "matchReason": "You are an Illinois resident age 18+ with a disability (or a family member of a person with a disability). The IATP loan program provides up to $5,000 for home modifications at a low interest rate. This is a loan — it must be repaid — but it is fast to access and useful for urgent modifications while awaiting grant approvals.",
+      "priority": 5,
+      "notes": "IATP also offers a Credit Builder Loan ($250–$1,000) to help build credit history while purchasing assistive technology. Family members of people with disabilities (age 18+) can also apply on behalf of the person with a disability."
+    },
+    {
+      "id": "usda-section-504",
+      "name": "USDA Section 504 Home Repair Loans and Grants",
+      "shortName": "USDA Section 504",
+      "adminAgency": "U.S. Dept. of Agriculture — Rural Development",
+      "type": "loan-and-grant",
+      "benefitLabel": "Loan up to $40,000 (1%, 20 years) + Grant for age 62+ (no repayment)",
+      "benefitMax": 40000,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Open but limited funding — apply early. Rural areas only (communities under 10,000 population). This program is not available in Chicago or suburban Cook County.",
+      "contact": {
+        "phone": "800-414-1226",
+        "email": null,
+        "url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-repair-loans-grants/il"
+      },
+      "eligibilityRules": [
+        { "rule": "ruralRequired", "value": true, "required": true },
+        { "rule": "homeownerRequired", "value": true, "required": true },
+        { "rule": "veryLowIncome", "value": true, "required": true }
+      ],
+      "matchReason": "You live in a rural area (community under 10,000 population), own your home, and have very low income. The USDA Section 504 program offers loans up to $40,000 at 1% interest over 20 years for accessibility modifications. If you are age 62 or older, a portion may be available as a grant (no repayment required). Contact your local USDA Rural Development office to apply.",
+      "priority": 4,
+      "notes": "The grant component (for age 62+) is for removing health and safety hazards — which includes accessibility modifications. The loan component is available at any age. Funding is limited and application is accepted year-round; earlier applications have a better chance."
+    },
+    {
+      "id": "medicaid-hcbs-mfp",
+      "name": "Illinois Medicaid HCBS / Pathways to Community Living (MFP)",
+      "shortName": "Medicaid / Pathways",
+      "adminAgency": "Illinois Dept. of Healthcare and Family Services",
+      "type": "medicaid-benefit",
+      "benefitLabel": "Case-by-case — home modifications covered as part of transition from institution",
+      "benefitMax": null,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "open",
+      "availabilityNote": "Open. Complex process — work with your hospital social worker or a Medicaid MCO care coordinator. Pathways to Community Living (Money Follows the Person) specifically supports people moving from institutions to home.",
+      "contact": {
+        "phone": "800-843-6154",
+        "email": null,
+        "url": "https://hfs.illinois.gov/medicalclients/hcbs.html"
+      },
+      "eligibilityRules": [
+        { "rule": "medicaidEligible", "value": true, "required": true },
+        { "rule": "currentlyInFacility", "value": true, "required": false, "optional": true }
+      ],
+      "matchReason": "You are enrolled in Medicaid. Illinois Medicaid HCBS waivers and the Pathways to Community Living (Money Follows the Person) program cover home and community-based services, which can include home modifications needed to safely return home from a hospital or skilled nursing facility. Work with your hospital discharge planner or Medicaid MCO care coordinator to initiate this pathway.",
+      "priority": 4,
+      "notes": "Pathways to Community Living (Illinois's MFP program) specifically funds modifications for people transitioning from Medicaid-funded institutions. Income limit: approximately $1,304/month for a single applicant (100% FPL). The process is bureaucratically complex — hospital social workers and MCO care coordinators are essential navigators."
+    },
+    {
+      "id": "medicare-advantage",
+      "name": "Medicare Advantage Supplemental Benefit — Home Modifications",
+      "shortName": "Medicare Advantage",
+      "adminAgency": "Private Medicare Advantage plan (varies by plan)",
+      "type": "insurance-benefit",
+      "benefitLabel": "Varies by plan — check your plan's supplemental benefits",
+      "benefitMax": null,
+      "lastVerified": "2026-04-26",
+      "waitlistStatus": "varies",
+      "availabilityNote": "Coverage is plan-specific and declining. As of 2024–2025, fewer than 8% of Medicare Advantage beneficiaries are enrolled in a plan offering home modification benefits (down from 16% in 2023). Call your plan's member services line to ask specifically about home modification supplemental benefits.",
+      "contact": {
+        "phone": "800-633-4227",
+        "email": null,
+        "url": "https://www.medicare.gov/plan-compare/"
+      },
+      "eligibilityRules": [
+        { "rule": "medicareAdvantage", "value": true, "required": true }
+      ],
+      "matchReason": "You are enrolled in a Medicare Advantage plan. Some Medicare Advantage plans offer home modification as a supplemental benefit. Coverage varies widely by plan and is declining nationwide — but it is worth a direct call to your plan's member services to ask. Since 2025, CMS requires plans to notify members mid-year of unused supplemental benefits.",
+      "priority": 6,
+      "notes": "Medicare Parts A and B (Original Medicare) do NOT cover structural home modifications. Only Medicare Advantage plans may offer this, and only some plans do. The share of MA plans offering home mod benefits fell significantly from 2023 to 2025. Do not assume coverage — verify directly with the plan."
+    }
+  ]
+}
