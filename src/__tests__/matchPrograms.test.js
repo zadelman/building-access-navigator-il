@@ -1,6 +1,6 @@
 'use strict';
 
-const {
+import {
   matchPrograms,
   evaluateRule,
   computeConfidence,
@@ -8,10 +8,12 @@ const {
   getCountyForZip,
   isChicagoZip,
   isRuralZip,
-} = require('../logic/matchPrograms');
+} from '../logic/matchPrograms';
 
-const { programs } = require('../data/programs.json');
-const zipData = require('../data/zip-grantees.json');
+import programsData from '../data/programs.json';
+import zipData from '../data/zip-grantees.json';
+
+const { programs } = programsData;
 
 // ─── Test ZIPs ────────────────────────────────────────────────────────────────
 const ZIP_CHICAGO        = '60614'; // Lincoln Park — Chicago city limits

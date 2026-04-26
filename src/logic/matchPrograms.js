@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Building Access — Benefits Navigator
  * Core matching logic: pure functions only, no side effects.
@@ -347,7 +345,7 @@ function matchPrograms(answers, programs, zipData) {
 
 // ─── Exports ──────────────────────────────────────────────────────────────────
 
-module.exports = {
+export {
   matchPrograms,
   evaluateRule,
   computeConfidence,

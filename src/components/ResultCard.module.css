@@ -1,0 +1,117 @@
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.badge {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge.confirmed {
+  background: var(--color-confirmed-bg);
+  color: var(--color-confirmed-text);
+}
+
+.badge.likely {
+  background: var(--color-likely-bg);
+  color: var(--color-likely-text);
+}
+
+.badge.possible {
+  background: var(--color-possible-bg);
+  color: var(--color-possible-text);
+}
+
+.matchReason {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.metaItem strong {
+  color: var(--color-text);
+}
+
+.caveats {
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.caveatHeading {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.caveat {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--color-border);
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.contact {
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.contactLink {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.waitlist {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  background: #fef3c7;
+  color: #92400e;
+}

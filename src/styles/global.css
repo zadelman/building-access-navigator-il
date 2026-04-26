@@ -1,0 +1,92 @@
+/* ── Building Access — Global Styles ──────────────────────────────────────── */
+
+:root {
+  /* Brand palette */
+  --color-primary:        #1a6b5a;
+  --color-primary-dark:   #134f42;
+  --color-primary-light:  #e8f4f1;
+  --color-accent:         #c47a2b;
+  --color-accent-dark:    #a36324;
+
+  /* Neutrals */
+  --color-text:           #1a1a1a;
+  --color-text-muted:     #6b7280;
+  --color-border:         #d1d5db;
+  --color-border-focus:   #1a6b5a;
+  --color-bg:             #f9fafb;
+  --color-surface:        #ffffff;
+
+  /* Confidence badges */
+  --color-confirmed-bg:   #d1fae5;
+  --color-confirmed-text: #065f46;
+  --color-likely-bg:      #fef3c7;
+  --color-likely-text:    #92400e;
+  --color-possible-bg:    #dbeafe;
+  --color-possible-text:  #1e3a8a;
+
+  /* Layout */
+  --max-width: 680px;
+  --radius:    8px;
+  --radius-lg: 12px;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+/* Focus ring — WCAG 2.1 AA */
+:focus-visible {
+  outline: 3px solid var(--color-border-focus);
+  outline-offset: 3px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius);
+  font-weight: 600;
+  z-index: 1000;
+  transition: top 0.15s;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}

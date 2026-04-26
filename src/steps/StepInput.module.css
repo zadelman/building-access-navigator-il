@@ -1,0 +1,42 @@
+/* Shared styles for text/number input steps */
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  max-width: 280px;
+}
+
+.inputLabel {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.textInput {
+  font-family: inherit;
+  font-size: 1.125rem;
+  padding: 0.625rem 0.875rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  min-height: 44px;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.textInput:focus {
+  border-color: var(--color-border-focus);
+  outline: none;
+}
+
+.textInput[aria-invalid='true'] {
+  border-color: #dc2626;
+}
+
+.errorText {
+  font-size: 0.875rem;
+  color: #dc2626;
+  font-weight: 500;
+}
