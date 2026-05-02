@@ -32,12 +32,7 @@ jobs:
       # Deploy only on push to main (not on pull requests)
       - name: Deploy to Hostinger via SFTP
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
-          port: 22
-          local-dir: ./dist/
-          server-dir: /public_html/
+        run: |
+          sudo apt-get install -y lftp
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" sftp://${{ secrets.FTP_SERVER }} \
+            -e "set sftp:auto-confirm yes; mirror -R ./dist/ /public_html/; quit"
