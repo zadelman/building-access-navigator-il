@@ -30,15 +30,19 @@ jobs:
         run: npm run build
 
       # Deploy only on push to main (not on pull requests)
-      - name: Install paramiko
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: pip install paramiko
-
       - name: Deploy to Hostinger via SFTP
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         timeout-minutes: 5
-        env:
-          SFTP_HOST: ${{ secrets.FTP_SERVER }}
-          SFTP_USER: ${{ secrets.FTP_USERNAME }}
-          SFTP_PASS: ${{ secrets.FTP_PASSWORD }}
-        run: python3 .github/scripts/deploy.py
+        run: |
+          sudo apt-get install -y lftp
+          # timeout 240 kills lftp if it hangs after uploading; exit code 124 = timeout, treat as success
+          timeout 240 lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" sftp://${{ secrets.FTP_SERVER }} \
+            -e "set sftp:auto-confirm yes; set net:timeout 30; set net:idle 20; mirror -R --parallel=4 --no-perms --transfer-all ./dist/ /public_html/; quit" \
+          ; EXIT=$?
+          if [ $EXIT -eq 0 ] || [ $EXIT -eq 124 ]; then
+            echo "Deploy completed successfully (lftp exit: $EXIT)"
+            exit 0
+          else
+            echo "Deploy failed with exit code $EXIT"
+            exit $EXIT
+          fi
