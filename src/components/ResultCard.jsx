@@ -12,6 +12,16 @@ const BADGE_TITLE = {
   possible: 'Some details are unknown — verify directly with the program.',
 };
 
+function programStatusLabel(status) {
+  switch (status) {
+    case 'open':     return { label: 'Open',               cls: 'statusOpen' };
+    case 'closed':   return { label: 'Closed',             cls: 'statusClosed' };
+    case 'waitlist': return { label: 'Waitlist',           cls: 'statusWaitlist' };
+    case 'varies':   return { label: 'Varies by location', cls: 'statusVaries' };
+    default:         return null;
+  }
+}
+
 /**
  * ResultCard — displays a single matched program.
  *
@@ -21,6 +31,7 @@ const BADGE_TITLE = {
 export default function ResultCard({ result }) {
   const { program, confidence, caveats } = result;
   const c = program.contact || {};
+  const status = programStatusLabel(program.waitlistStatus);
 
   return (
     <div className={styles.card}>
@@ -49,10 +60,12 @@ export default function ResultCard({ result }) {
             <strong>Type:</strong> {program.benefitType}
           </span>
         )}
-        {program.waitlistStatus && program.waitlistStatus !== 'none' && (
+        {status && (
           <span className={styles.metaItem}>
-            Waitlist status:
-            <span className={styles.waitlist}>{program.waitlistStatus}</span>
+            Program status:
+            <span className={`${styles.statusBadge} ${styles[status.cls]}`}>
+              {status.label}
+            </span>
           </span>
         )}
       </div>
@@ -72,8 +85,8 @@ export default function ResultCard({ result }) {
             📞 {c.phone}
           </a>
         )}
-        {c.website && (
-          <a href={c.website} target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+        {c.url && (
+          <a href={c.url} target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
             Website ↗
           </a>
         )}

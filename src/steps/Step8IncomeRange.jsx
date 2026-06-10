@@ -2,26 +2,10 @@ import QuestionCard from '../components/QuestionCard';
 import RadioStep from '../components/RadioStep';
 
 const OPTIONS = [
-  {
-    value: 'very-low',
-    label: 'Very low income',
-    description: 'Roughly below $40,000/year for a family of four (below 50% Area Median Income)',
-  },
-  {
-    value: 'low',
-    label: 'Low income',
-    description: 'Roughly $40,000–$65,000/year for a family of four (50–80% Area Median Income)',
-  },
-  {
-    value: 'moderate',
-    label: 'Moderate income',
-    description: 'Roughly $65,000–$100,000/year for a family of four (80–120% Area Median Income)',
-  },
-  {
-    value: 'high',
-    label: 'Above moderate',
-    description: 'Above $100,000/year for a family of four (above 120% Area Median Income)',
-  },
+  { value: 'very-low', label: 'Under $40,000 / year' },
+  { value: 'low',      label: '$40,000 – $65,000 / year' },
+  { value: 'moderate', label: '$65,000 – $100,000 / year' },
+  { value: 'high',     label: 'Over $100,000 / year' },
 ];
 
 export default function Step8IncomeRange({ answers, onChange, onNext, onBack, onSkip }) {
@@ -30,7 +14,7 @@ export default function Step8IncomeRange({ answers, onChange, onNext, onBack, on
   return (
     <QuestionCard
       question="Which income range best describes your household?"
-      description="Dollar amounts shown are approximate for a family of four and vary by county. They are used only to estimate eligibility — exact limits are determined by each program."
+      description="Dollar amounts are approximate for a family of four and vary by household size and county. They are used only to estimate eligibility — exact limits are determined by each program."
       onNext={onNext}
       onBack={onBack}
       onSkip={onSkip}

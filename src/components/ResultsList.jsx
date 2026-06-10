@@ -9,10 +9,21 @@ import styles from './ResultsList.module.css';
  *   grantees {Object[]}       — HRAP grantees for the user's ZIP (may be [])
  *   onRestart {function}      — reset to beginning
  */
+function granteeStatusLabel(status) {
+  switch (status) {
+    case 'open':   return { label: 'Open',    cls: 'granteeOpen' };
+    case 'closed': return { label: 'Closed',  cls: 'granteeClosed' };
+    default:       return null;
+  }
+}
+
 export default function ResultsList({ results, grantees, onRestart }) {
   const confirmed = results.filter(r => r.confidence === 'confirmed');
   const likely    = results.filter(r => r.confidence === 'likely');
   const possible  = results.filter(r => r.confidence === 'possible');
+
+  // Only show HRAP grantees when the user is eligible for IHDA HRAP
+  const hrapMatched = results.some(r => r.program.id === 'ihda-hrap');
 
   const hasResults = results.length > 0;
 
@@ -62,33 +73,42 @@ export default function ResultsList({ results, grantees, onRestart }) {
         </>
       )}
 
-      {/* IHDA HRAP local grantees (when user ZIP is provided) */}
-      {grantees.length > 0 && (
+      {/* IHDA HRAP local grantee administrators — only shown when HRAP is in matched results */}
+      {hrapMatched && grantees.length > 0 && (
         <div className={styles.granteesSection}>
-          <h3 className={styles.granteesHeading}>IHDA HRAP — Local Contractors in Your Area</h3>
+          <h3 className={styles.granteesHeading}>
+            IHDA Home Repair and Accessibility Program (HRAP) — Grant Administrators Serving Your Area
+          </h3>
           <p className={styles.granteesSubhead}>
-            The IHDA Home Repair and Accessibility Program works through local grantees. These are the organizations serving your ZIP code:
+            IHDA HRAP is administered locally. Apply directly through the organization(s) below — do not apply to IHDA. Contact them to confirm current availability and start an application.
           </p>
-          {grantees.map(g => (
-            <div key={g.id} className={styles.granteeCard}>
-              <p className={styles.granteeName}>{g.name}</p>
-              {g.serviceArea && <p className={styles.granteeArea}>{g.serviceArea}</p>}
-              <div className={styles.granteeContact}>
-                {g.contact?.phone && (
-                  <a href={`tel:${g.contact.phone.replace(/\D/g, '')}`}>{g.contact.phone}</a>
-                )}
-                {g.contact?.website && (
-                  <a href={g.contact.website} target="_blank" rel="noopener noreferrer">Website ↗</a>
-                )}
-                {g.contact?.email && (
-                  <a href={`mailto:${g.contact.email}`}>{g.contact.email}</a>
-                )}
+          {grantees.map(g => {
+            const gStatus = granteeStatusLabel(g.waitlistStatus);
+            return (
+              <div key={g.id} className={styles.granteeCard}>
+                <div className={styles.granteeHeader}>
+                  <p className={styles.granteeName}>{g.name}</p>
+                  {gStatus && (
+                    <span className={`${styles.granteeStatusBadge} ${styles[gStatus.cls]}`}>
+                      {gStatus.label}
+                    </span>
+                  )}
+                </div>
+                {g.serviceArea && <p className={styles.granteeArea}>{g.serviceArea}</p>}
+                <div className={styles.granteeContact}>
+                  {g.contact?.phone && (
+                    <a href={`tel:${g.contact.phone.replace(/\D/g, '')}`}>{g.contact.phone}</a>
+                  )}
+                  {g.contact?.url && (
+                    <a href={g.contact.url} target="_blank" rel="noopener noreferrer">Website ↗</a>
+                  )}
+                  {g.contact?.email && (
+                    <a href={`mailto:${g.contact.email}`}>{g.contact.email}</a>
+                  )}
+                </div>
               </div>
-              {g.waitlistStatus && g.waitlistStatus !== 'none' && (
-                <span className={styles.granteeWaitlist}>{g.waitlistStatus}</span>
-              )}
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
 

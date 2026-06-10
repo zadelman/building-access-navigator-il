@@ -105,13 +105,16 @@
   font-weight: 500;
 }
 
-.waitlist {
+.statusBadge {
   display: inline-block;
   font-size: 0.8125rem;
   font-weight: 600;
   padding: 0.125rem 0.5rem;
   border-radius: 4px;
   margin-left: 0.5rem;
-  background: #fef3c7;
-  color: #92400e;
 }
+
+.statusOpen    { background: #d1fae5; color: #065f46; }
+.statusClosed  { background: #fee2e2; color: #991b1b; }
+.statusWaitlist{ background: #fef3c7; color: #92400e; }
+.statusVaries  { background: #f3f4f6; color: #374151; }

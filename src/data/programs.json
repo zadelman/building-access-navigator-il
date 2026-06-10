@@ -73,7 +73,7 @@
         { "rule": "veteran", "value": true, "required": true },
         { "rule": "serviceConnected", "value": true, "required": true }
       ],
-      "matchReason": "You are a veteran with a service-connected disability. The VA Specially Adapted Housing grant is the single largest home modification benefit in this inventory — up to $126,526 for FY2026. It covers extensive modifications or an entirely new accessible home. You can use the grant up to 6 times over your lifetime. Apply through your VA regional loan center.",
+      "matchReason": "You are a veteran with a service-connected disability. The VA Specially Adapted Housing grant is the single largest home modification benefit in this inventory — up to $126,526 for FY2026. It covers extensive modifications or an entirely new accessible home. You can use the grant up to 6 times over your lifetime. Only 120 Veterans and service members each fiscal year (FY) can qualify for a grant based on the loss of one extremity after September 11, 2001, as set by Congress. Apply through your VA regional loan center.",
       "priority": 2,
       "notes": "SAH is for the most severely disabled veterans (e.g., loss of or loss of use of both legs, blindness in both eyes with visual acuity of 20/200 or less, or certain severe burns). For less severe but still significant service-connected disabilities, see VA SHA grant."
     },
@@ -113,9 +113,9 @@
       "waitlistStatus": "open",
       "availabilityNote": "Open. Available to veterans with both service-connected and non-service-connected disabilities — the most accessible VA housing grant.",
       "contact": {
-        "phone": "800-827-1000",
+        "phone": null,
         "email": null,
-        "url": "https://www.va.gov/housing-assistance/disability-housing-grants/"
+        "url": "https://www.prosthetics.va.gov/psas/HISA2.asp"
       },
       "eligibilityRules": [
         { "rule": "veteran", "value": true, "required": true }
@@ -164,7 +164,7 @@
       "contact": {
         "phone": "(312) 836-5200",
         "email": null,
-        "url": "https://www.ihda.org/community-partners/affordable-housing-programs/home-accessibility-program/"
+        "url": "https://www.ihda.org/my-community/revitalization-programs/#toggle-id-1"
       },
       "eligibilityRules": [
         { "rule": "ilResident", "value": true, "required": true },
@@ -188,7 +188,7 @@
       "waitlistStatus": "waitlist",
       "availabilityNote": "Waitlist of 800+ as of early 2026. Apply now — the waitlist is real but the program is expanding. Administered through your local Center for Independent Living (CIL).",
       "contact": {
-        "phone": null,
+        "phone": "(800) 587-1227",
         "email": null,
         "url": "https://incil.org/homemod/"
       },
@@ -211,7 +211,7 @@
       "benefitMax": null,
       "lastVerified": "2026-04-26",
       "waitlistStatus": "open",
-      "availabilityNote": "DRS funds flow through INCIL and local CILs. If you are not currently enrolled in the DHS Home Services Program, contact DRS to discuss eligibility. Also apply directly to INCIL (see above).",
+      "availabilityNote": "DRS funds flow through Illinois Network of Centers for Independent Living (INCIL) and local Centers for Independent Living (CILs). If you are not currently enrolled in the DHS Home Services Program, contact DRS to discuss eligibility. Also apply directly to INCIL (see above).",
       "contact": {
         "phone": "877-581-3690",
         "email": null,
@@ -222,7 +222,7 @@
         { "rule": "hasDisability", "value": true, "required": true },
         { "rule": "notInDHSHomeServices", "value": true, "required": false, "optional": true }
       ],
-      "matchReason": "The Illinois Division of Rehabilitation Services funds home modification grants for people with disabilities not currently served by the DHS Home Services Program. Funds are disbursed through INCIL and local Centers for Independent Living. Call DRS at 877-581-3690 to discuss your situation, and apply to INCIL simultaneously.",
+      "matchReason": "The Illinois Division of Rehabilitation Services funds home modification grants for people with disabilities not currently served by the DHS Home Services Program. Funds are disbursed through Illinois Network of Centers for Independent Living (INCIL) and local Centers for Independent Living. Call DRS at 877-581-3690 to discuss your situation, and apply to INCIL simultaneously.",
       "priority": 4,
       "notes": "DRS and INCIL are closely linked — applying to one often surfaces the other. The $4.5M initial grant will eventually be expended; watch for follow-on state appropriations."
     },
@@ -249,7 +249,7 @@
       ],
       "matchReason": "You are an Illinois resident age 18+ with a disability (or a family member of a person with a disability). The IATP loan program provides up to $5,000 for home modifications at a low interest rate. This is a loan — it must be repaid — but it is fast to access and useful for urgent modifications while awaiting grant approvals.",
       "priority": 5,
-      "notes": "IATP also offers a Credit Builder Loan ($250–$1,000) to help build credit history while purchasing assistive technology. Family members of people with disabilities (age 18+) can also apply on behalf of the person with a disability."
+      "notes": "Does not seem to be active? Contact the program to confirm. IATP also offers a Credit Builder Loan ($250–$1,000) to help build credit history while purchasing assistive technology. Family members of people with disabilities (age 18+) can also apply on behalf of the person with a disability."
     },
     {
       "id": "usda-section-504",
@@ -263,8 +263,8 @@
       "waitlistStatus": "open",
       "availabilityNote": "Open but limited funding — apply early. Rural areas only (communities under 10,000 population). This program is not available in Chicago or suburban Cook County.",
       "contact": {
-        "phone": "800-414-1226",
-        "email": null,
+        "phone": "217-403-6200",
+        "email": "RD.IL.General.Inquiries@usda.gov ",
         "url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-repair-loans-grants/il"
       },
       "eligibilityRules": [
