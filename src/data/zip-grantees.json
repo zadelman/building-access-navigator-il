@@ -199,7 +199,7 @@
         "title": "Grant Specialist",
         "phone": "(309) 434-2232",
         "email": "cdunlap@cityblm.org",
-        "url": "https://www.bloomingtonil.gov/departments/community-impact-enhancement/grants-management-division/ihda-hrap"
+        "url": "https://www.bloomingtonil.gov/departments/community-impact-enhancement/community-development-division/ihda-hrap"
       }
     },
 
@@ -227,21 +227,7 @@
         "title": "Community Development Administrator",
         "phone": "(217) 431-2286",
         "email": "lcronk@cityofdanville.org",
-        "url": "https://www.cityofdanville.org/"
-      }
-    },
-
-    "city-of-decatur": {
-      "name": "City of Decatur",
-      "serviceArea": "Decatur",
-      "projectTypes": ["Roof Only"],
-      "waitlistStatus": "closed",
-      "contact": {
-        "name": "LeAnne Bond",
-        "title": "Grants Specialist – Project Implementation",
-        "phone": "(217) 450-2327",
-        "email": "lbond@decaturil.gov",
-        "url": "https://www.decaturil.gov"
+        "url": "https://www.cityofdanville.org/370/IHDA-Home-Repair-and-Accessibility-Progr"
       }
     },
 
@@ -253,23 +239,9 @@
       "contact": {
         "name": "Darrin Taflinger",
         "title": "Program Manager",
-        "phone": "(309) 837-3941",
+        "phone": "(309) 837-2997",
         "email": "darrin@wirpc.org",
-        "url": "https://www.ci.galesburg.il.us/government/departments/housing_grants/index.php"
-      }
-    },
-
-    "city-of-loves-park": {
-      "name": "City of Loves Park",
-      "serviceArea": "Loves Park",
-      "projectTypes": ["Full Rehab"],
-      "waitlistStatus": "closed",
-      "contact": {
-        "name": "Tammy Scott",
-        "title": "Program Administrator",
-        "phone": "(815) 636-9590",
-        "email": "tscott@mcmgrp.net",
-        "url": null
+        "url": "https://www.ci.galesburg.il.us/government/departments/community_development/housing_grants/city_of_galesburg_housing_repair_assistance_program.php"
       }
     },
 
@@ -280,10 +252,10 @@
       "waitlistStatus": "open",
       "contact": {
         "name": "Darrin Taflinger",
-        "title": "Third Party Administrator",
+        "title": "Western Illinois Regional Council Administrator",
         "phone": "(309) 837-2997",
         "email": "darrin@wirpc.org",
-        "url": "https://www.wirpc.org"
+        "url": "https://www.wirpc.org/macomb"
       }
     },
 
@@ -297,7 +269,7 @@
         "title": "Community Development Manager",
         "phone": "(309) 524-2044",
         "email": "kwhitley@moline.il.us",
-        "url": "https://www.moline.il.us"
+        "url": "https://www.moline.il.us/107/Community-Development"
       }
     },
 
@@ -308,24 +280,10 @@
       "waitlistStatus": "open",
       "contact": {
         "name": "Darrin Taflinger",
-        "title": "Third Party Administrator",
+        "title": "Western Illinois Regional Council Administrator",
         "phone": "(309) 837-2997",
         "email": "darrin@wirpc.org",
         "url": "https://www.wirpc.org"
-      }
-    },
-
-    "city-of-peoria": {
-      "name": "City of Peoria",
-      "serviceArea": "Peoria",
-      "projectTypes": ["Roof Only"],
-      "waitlistStatus": "open",
-      "contact": {
-        "name": "Lane Andrews",
-        "title": "Project Coordinator",
-        "phone": "(309) 494-8600",
-        "email": "communitydevelopment@peoriagov.org",
-        "url": "https://peoriagov.org/218/Assistance-Programs"
       }
     },
 
@@ -339,12 +297,12 @@
         "title": "Housing Officer",
         "phone": "(309) 732-2904",
         "email": "graff.jennifer@rigov.org",
-        "url": "https://www.rigov.org"
+        "url": "https://www.rigov.org/1624/Home-Repair-and-Accessibility-Program-IH"
       }
     },
 
     "city-of-waukegan": {
-      "name": "City of Waukegan",
+      "name": "City of Waukegan - Housing Rehabilitation Program",
       "serviceArea": "Waukegan",
       "projectTypes": ["Accessibility", "Full Rehab", "Roof Only"],
       "waitlistStatus": "open",
@@ -352,8 +310,8 @@
         "name": "Laraesa Garland",
         "title": "Director of CDBG",
         "phone": "(847) 599-2530",
-        "email": "CDBG@waukeganil.gov",
-        "url": "https://www.waukeganil.gov"
+        "email": "cdbg@waukeganil.gov",
+        "url": "https://www.waukeganil.gov/856/HOUSING-REHABILITATION-PROGRAM"
       }
     },
 
@@ -367,7 +325,7 @@
         "title": "Grant Compliance Manager",
         "phone": "(217) 348-0521",
         "email": "kmcreynolds@co.coles.il.us",
-        "url": "https://www.colesco.illinois.gov/"
+        "url": "https://www.colesco.illinois.gov/ccrpdc/housing/"
       }
     },
 
